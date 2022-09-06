@@ -2,25 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Đăng kí tên người dùng</title>
+    <title>Tạo form cơ bản</title>
 </head>
 <body>
-<form action="http://demo.codegym.vn/6/registration_form/register.php
-">
-    Họ và tên: <br>
-    <input type="text" name="=name"/>
-    <br>
-    Số Điện Thoại: <br>
-    <input type="text" name="phone"/>
-    <br>
-    Email: <br>
-    <input type="text" name="email"/>
-    <br>
-    Giới tính: <br>
-    <input type="radio" name="gender"/>Nam
-    <input type="radio" name="gender"/>Nữ
-    <br><br>
-    <input type="submit" value="đăng kí"/>
+<form>
+    <table>
+        <tr>
+            <th style="background-color: darkcyan" style="color:wheat"></th>ĐĂNG KÍ HỌC VIÊN
+        </tr>
+        <tr>
+            <td style="clor: blue">Họ Và Tên</td>
+            <td colspan="3"><input type="text"style="width:120px"name="Họ và tên"/td>
+        </tr>
+        <tr>
+            <td style="clor: blue">Ngày sinh</td>
+            <td colspan="3"><input type="text"style="whdth200px"name="Ngày sinh"/td>
+        </tr>
+        <tr>
+            <td style="clor: blue">Giới tính
+            <input type="radio" name="gender"/>Nam
+            <input type="radio" name="gender"/>Nữ</td>
+        </tr>
+        <tr>
+            <td style="clor" blue>Địa chỉ</td>
+            <td colspan="5"><input type="text"style="width:220px"name="Địa chỉ"</td>
+        </tr>
+        <tr>
+            <td style="clor: blue">Lớp</td>
+        </tr>
+        <tr>
+            <td style="clor: blue">Email</td>
+            <td colspan="3"><input type="text"style="width:220"name="Email"/td>
+        </tr>
+        <tr>
+            <td style="clor: blue">Điện Thoại</td>
+            <td colspan="3"><input type="text"style="width:220"name="Điện Thoại"/td>
+            <br><br>
+                <input type="submit" value="đăng kí">
+        </tr>
+
+    </table>
 </form>
 </body>
 </html>
