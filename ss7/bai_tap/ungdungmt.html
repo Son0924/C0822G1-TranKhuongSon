@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ứng dụng máy tính</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th colspan="4"> Caculator</th>
+    </tr>
+    <tr>
+        <td colspan="2"><input type="text" id="in1" placeholder="nhập số thứ nhất"></td>
+        <td colspan="2"><input type="text" id="in2" placeholder="nhập số thứ hai"></td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" onclick="add()">Addition(+)</button>
+        </td>
+        <td>
+            <button type="button" onclick="subtract()">Subtraction(-)</button>
+        </td>
+        <td>
+            <button type="button" onclick="multiply()">Multiplication(X)</button>
+        </td>
+        <td>
+            <button type="button" onclick="divide()">Division(/)</button>
+        </td>
+    </tr>
+    <tr>
+        <div id="result"></div>
+    </tr>
+
+    <script>
+
+        function add() {
+            let number1 = +document.getElementById("in1").value;
+            let number2 = +document.getElementById("in2").value;
+            document.getElementById("result").innerHTML = number1 + number2;
+        }
+
+        function subtract() {
+            let number1 = +document.getElementById("in1").value;
+            let number2 = +document.getElementById("in2").value;
+            document.getElementById("result").innerHTML = number1 - number2;
+        }
+
+        function multiply() {
+            let number1 = +document.getElementById("in1").value;
+            let number2 = +document.getElementById("in2").value;
+            document.getElementById("result").innerHTML = number1 * number2;
+        }
+
+        function divide() {
+            let number1 = +document.getElementById("in1").value;
+            let number2 = +document.getElementById("in2").value;
+            document.getElementById("result").innerHTML = number1 / number2;
+        }
+
+    </script>
+</table>
+</body>
+</html>
+</body>
+</html>
