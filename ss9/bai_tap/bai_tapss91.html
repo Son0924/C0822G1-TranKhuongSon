@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính số cân nặng của cơ thể</title>
+</head>
+<body>
+<p style="font-size: 30px;"> <b>Bài Tính Chỉ Số BMI </b></p>
+<p style="font-size: 20px;"><b> Nhập Chiều Cao (M)</b></p>
+<input type="number" id="chieucao"> <br>
+<p style="font-size: 20px;"><b> Nhập Cân Nặng (Kg)</b></p>
+<input type="number" id="cannang"> <br> <br>
+<button onclick="chiSoBmi()">Kết Quả</button>
+<p id="ketqua" style="font-size: 20px ;color: black"><b></b></p>
+</body>
+<script>
+    function chiSoBmi() {
+        let height = document.getElementById("chieucao").value;
+        let weight = document.getElementById("cannang").value;
+        let bmi = weight / (height * height);
+        if (bmi < 18)
+            document.write("underweight");
+        else if (bmi < 25.0)
+            document.write("Normal");
+        else if (bmi < 30 )
+            document.write("overweight");
+        else
+            document.write("Obese");
+</scrip>
+</body>
+</html>
